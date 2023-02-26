@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SheCodes</title>
+    <link rel="stylesheet" href="./src/styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <div class="form-container">
+        <form class="form1">
+          <input
+            type="text"
+            id="fname"
+            name="fname"
+            class="search-bar"
+            placeholder="Enter a city.."
+          />
+          <input type="submit" value="Search" class="search-btn" />
+        </form>
+        <hr />
+      </div>
+
+      <div class="data-today">
+        <div class="city-info">
+          <h1 class="info-name">San Francisco</h1>
+          <p class="info-time-condition">Friday 17:01, scattered clouds</p>
+          <p class="info-Humid-wind">Humidity: <small class="colored-red">66%</small>, Wind: <small class="colored-red">3.13km/h</small></p>
+        </div>
+        <div class="temp-today">
+          <img class="icon-today" src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-night.png"></img>
+          <div class="temp-flex">
+              <small class="temp">10</small>
+              <p ><small class="c">°C</small> | <small class="f">°F</small></p>
+          </div>
+          
+        </div>
+      </div>
+      
+      
+      <div class="data-forcast"></div>
+      <hr />
+      <p class="links">This project was coded by <a href="https://github.com/gitaShojaee">Gita</a> and is open-sourced on <a href="https://github.com/gitaShojaee/vanilla-weather-app">GitHub</a> and <a href="">hosted on Netlify</a></p>
+    </main>
+
+    <script src="./src/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,147 @@
+body {
+  margin: 0;
+  font-size: 1.125rem;
+  font-family: Arial, sans-serif;
+  background-color: #f9f7fe;
+}
+
+hr {
+  width: 93%;
+  border: none;
+  height: 0.1px;
+  background-color: #f8f7fa;
+  margin-top: 2em;
+  margin-bottom: 2.5em;
+}
+
+.info-time-condition,
+.info-Humid-wind {
+  color: #c7c5ce;
+}
+.colored-red {
+  color: #f75282;
+}
+.container {
+  margin: 0 auto;
+  width: 82%;
+  padding: 3em 1em;
+  margin-top: 4em;
+  margin-bottom: 4em;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 30px 50px rgb(65 50 100 / 8%);
+  border-radius: 16px;
+}
+.form-container {
+  text-align: center;
+  /* width: 100%; 
+  padding:0;*/
+  /* margin: auto; */
+  /* padding: 0; */
+}
+.form1 {
+  width: 100%;
+}
+.search-bar {
+  /* padding: 1em 2em; */
+  padding-block: 1em;
+  width: 60%;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  background-color: #f9f7fe;
+}
+input:focus {
+  outline: 3.2px solid #c2dbfe;
+}
+
+.search-btn {
+  /* padding: 1em 3em; */
+  padding-block: 1em;
+  width: 30%;
+  border-radius: 6px;
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  margin-left: 0.5em;
+  background-color: #885df1;
+}
+
+.search-bar {
+  width: 60%;
+  margin-left: auto;
+}
+
+.data-today {
+  text-align: center;
+  display: flex;
+  flex-direction: column-reverse;
+}
+/* temp today */
+.temp {
+  font-size: 4.5rem;
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+}
+.temp-flex {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+/* forcast */
+.data-forcast {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3em;
+  row-gap: 3em;
+}
+.data-forcast > img {
+  width: 70%;
+}
+.week-day {
+  text-align: center;
+}
+.day-name {
+  color: #c7c5ce;
+  margin: 0;
+}
+.forcast-temp {
+  margin: 0;
+}
+.min {
+  color: #faa3bd;
+  font-weight: bold;
+}
+.max {
+  color: #f65282;
+  font-weight: bold;
+}
+.links {
+  text-align: center;
+  font-size: 0.5em;
+}
+/* a{
+  font-size: 1em;
+} */
+@media screen and (min-width: 768px) {
+  .container {
+    width: 50%;
+  }
+  .data-today {
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .temp-today {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .data-forcast {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
